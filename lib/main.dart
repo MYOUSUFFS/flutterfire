@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire/screen/auth/auth.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const AppPath(),
+      home: AppPath(),
     );
   }
 }
@@ -33,12 +34,13 @@ class MyApp extends StatelessWidget {
 bool isAuth = false;
 
 class AppPath extends StatelessWidget {
-  const AppPath({super.key});
+  AppPath({super.key});
+  final bool _auth = FirebaseAuth.instance.currentUser != null;
 
   @override
   Widget build(BuildContext context) {
-    if (!isAuth) {
-      return MyLogin();
+    if (!_auth) {
+      return MyEmailPassword();
     } else {
       return const MyHome();
     }
