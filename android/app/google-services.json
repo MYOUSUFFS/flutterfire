@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721782087228",
+    "project_id": "ecfile-ecpaye",
+    "storage_bucket": "ecfile-ecpaye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721782087228:android:5666ade0d71b0d9b2d2d39",
+        "android_client_info": {
+          "package_name": "com.example.flutterfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxN4GwDcIPlc-D_VVoXNFaWHEMLyrnflI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
